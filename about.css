@@ -1,6 +1,5 @@
 body {
-  height: 190vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 /* RIGHT FRAME */
@@ -8,73 +7,79 @@ body {
 .portrait-frame {
   height: 700px;
   position: fixed;
-  right: 260px;
+  right: 300px;
   top: 185px;
 }
 
 .main-name {
   position: fixed;
-  right: var(--outer-margin);
-  bottom: var(--outer-margin);
+  right: 320px;
+  top: 150px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  font-weight: 900;
+  font-size: 84px;
+  line-height: 70px;
+  letter-spacing: 2px;
+}
+
+.main-name .name-last {
   color: #ffffff;
-  font-weight: 800;
-  font-size: 48px;
-  letter-spacing: 10px;
+}
+
+.image-circle {
+  background-color: #ffffff;
+  position: fixed;
+  top: 150px;
+  right: -30px;
+  width: 614px;
+  height: 614px;
+  z-index: 0;
 }
 
 /* L-SIDE INTRO */
 
-.short-intro-main {
+.intro-container {
   position: absolute;
-  left: var(--outer-margin);
-  top: 500px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 36px;
-  letter-spacing: 3px;
-  width: 600px;
+  left: 200px;
+  top: 220px;
 }
 
-.short-intro-desc {
-  position: absolute;
-  left: var(--outer-margin);
-  top: 670px;
+.about-header {
+  color: var(--grey-color);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.intro-main {
   color: #ffffff;
-  font-weight: 200;
-  font-size: 24px;
-  letter-spacing: 3px;
-  width: 480px;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2.6px;
+  line-height: 32px;
+  width: 500px;
 }
 
 .first-circle {
   position: absolute;
-  bottom: -50px;
-  left: -50px;
-  width: 565px;
-  height: 565px;
-}
-
-.down-arrow {
-  position: absolute;
-  left: var(--outer-margin);
-  bottom: var(--outer-margin);
-  height: 45px;
-  transition: all 0.3s ease;
-}
-
-.full-intro {
-  position: absolute;
-  left: var(--outer-margin);
-  top: 1050px;
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 20px;
-  letter-spacing: 3px;
-  line-height: 32px;
-  width: 480px;
+  top: -50px;
+  left: 150px;
+  width: 500px;
+  height: 500px;
 }
 
 /* CONNECT W/ ME */
+
+.bottom-circle-container {
+  position: absolute;
+  width: 865px;
+  height: 350px;
+  top: 600px;
+  left: -100px;
+}
 
 .connect-text {
   position: absolute;
@@ -84,15 +89,6 @@ body {
   font-weight: 800;
   font-size: 56px;
   letter-spacing: 3px;
-}
-
-.bottom-circle-container {
-  position: absolute;
-  width: 865px;
-  height: 400px;
-  overflow: hidden;
-  top: 1400px;
-  left: -100px;
 }
 
 .second-circle {
@@ -105,8 +101,8 @@ body {
 
 .sc-icons-container {
   position: absolute;
-  bottom: var(--outer-margin);
-  left: 560px;
+  bottom: 80px;
+  left: 555px;
 }
 
 .icon {
