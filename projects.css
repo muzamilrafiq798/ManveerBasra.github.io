@@ -1,6 +1,5 @@
 .my-projects-header {
   margin: 50px var(--outer-margin);
-  margin-bottom: 100px;
   color: #ffffff;
   font-size: 52px;
   font-weight: 800;
@@ -23,6 +22,14 @@
   margin-bottom: 300px;
 }
 
+.card-selector {
+  position: absolute;
+  left: 240px;
+  width: 1212px;
+  height: 492px;
+  z-index: 2;
+}
+
 .card-container {
   height: 450px;
 }
@@ -42,8 +49,8 @@
 /* L-SIDE CONTENT */
 
 .card-content {
+  margin-top: 40px;
   padding: 50px 75px;
-  margin-top: -150px;
   transition: all 0.3s ease;
   display: inline-block;
   vertical-align: top; 
@@ -112,13 +119,14 @@
 }
 
 .card-image {
-  vertical-align:top;
+  vertical-align: top;
   display: inline-block;
-  transform: translate(40px, -280px);
+  transform: translate(40px, -75px);
+  z-index: 1;
 }
 
 .card-image.two {
-  transform: translate(40px, -300px);
+  transform: translate(40px, -100px);
 }
 
 .card-image img {
@@ -129,10 +137,15 @@
 
 /* TRANSITIONS */
 
+.card-container:hover {
+  height: 450px;
+}
+
 .card-container:hover .card-frame{
   width: 1186px;
   height: 466px;
   transform: translate(7px, 7px);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .card-container:hover .card-number {
@@ -144,7 +157,7 @@
 }
 
 .card-container:hover .arrow {
-  transform: translateX(24px);
+  transform: translateX(32px);
 }
 
 .card-container:hover .card-image img {
