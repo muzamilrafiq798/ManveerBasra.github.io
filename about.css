@@ -43,7 +43,7 @@ body {
 .intro-container {
   position: absolute;
   left: 200px;
-  top: 220px;
+  top: 180px;
 }
 
 .about-header {
@@ -70,6 +70,37 @@ body {
   width: 500px;
   height: 500px;
 }
+
+.view-resume-container {
+  width: 260px;
+  margin-top: 40px;
+}
+
+.view-resume-container img {
+  display: inline-block;
+  height: 22px;
+  margin-right: 36px;
+  transition: all 0.3s ease;
+}
+
+.view-resume-text {
+  display: inline-block;
+  color: var(--main-orange-color);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 1.83px;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.view-resume-container:hover .view-resume-text{
+  transform: translateX(10px) translateY(-3px);
+}
+
+.view-resume-container:hover img {
+  transform: translateX(32px);
+}
+
 
 /* CONNECT W/ ME */
 
