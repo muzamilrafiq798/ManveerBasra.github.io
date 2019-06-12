@@ -20,10 +20,18 @@ body {
 
 .sec-circle {
   position: absolute;
-  top: 800px;
+  top: 1200px;
   right: -100px;
   width: 800px;
   height: 800px;
+}
+
+.third-circle {
+  position: absolute;
+  top: 2400px;
+  left: 300px;
+  width: 650px;
+  height: 650px;
 }
 
 /* PROJECT CARD */
