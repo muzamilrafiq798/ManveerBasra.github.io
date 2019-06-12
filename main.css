@@ -34,12 +34,32 @@ body {
   z-index: -3;
 }
 
+
 /* TOP BAR */
 
 .top-bar {
   margin: 0 var(--outer-margin);
   padding-top: var(--outer-margin);
   justify-self: center;
+}
+
+.highlight-circle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 97px;
+  left: 99px;
+  background-color:rgba(255, 152, 0, 0);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+.main-logo:hover + .highlight-circle {
+  width: 90px;
+  height: 90px;
+  transform: translate(-41px, -39px);
+  background-color: rgba(255, 152, 0, 0.25);
 }
 
 .nav-bar {

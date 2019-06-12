@@ -9,6 +9,11 @@ body {
   position: fixed;
   right: 300px;
   top: 185px;
+
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .main-name {
@@ -22,6 +27,12 @@ body {
   font-size: 84px;
   line-height: 70px;
   letter-spacing: 2px;
+
+  /* make text not selectable */
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .main-name .name-last {
@@ -98,7 +109,7 @@ body {
 }
 
 .view-resume-container:hover img {
-  transform: translateX(32px);
+  transform: translateX(24px);
 }
 
 
