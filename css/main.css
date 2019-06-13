@@ -87,3 +87,19 @@ body {
 .nav-bar a.active {
   color: var(--main-orange-color);
 }
+
+/* MEDIA BREAKPOINTS */
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  :root {
+    --outer-margin: 25px;
+  }
+
+  .nav-bar a {
+    text-align: end;
+    display: block;
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+}
