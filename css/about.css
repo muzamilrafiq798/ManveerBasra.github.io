@@ -41,12 +41,13 @@ body {
 
 .image-circle {
   background-color: #ffffff;
+  overflow: hidden;
   position: fixed;
   top: 150px;
   right: -30px;
   width: 614px;
   height: 614px;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* L-SIDE INTRO */

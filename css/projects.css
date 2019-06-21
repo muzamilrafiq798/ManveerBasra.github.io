@@ -192,3 +192,62 @@ body {
   transform: translate(1.5px, 4px);
   width: 276px;
 }
+
+/* Small Screens (Phones) */
+
+@media (max-width: 767px) {
+  .my-projects-header {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .projects {
+    position: absolute;
+    top: 400px;
+    height: 800px;
+  }
+  
+  .project-card {
+    width: 350px;
+    height: 480px;
+    margin-bottom: 300px;
+  }
+  
+  .card-selector {
+    position: absolute;
+    width: 400px;
+    height: 492px;
+  }
+  
+  .card-container {
+    height: 450px;
+  }
+  
+  .card-frame {
+    left: 20px;
+    width: 360px;
+    height: 480px;
+  }
+
+  .card-content {
+    margin-top: 10px;
+    padding: 30px 15px;
+  }
+  
+  .card-desc {
+    width: 330px;
+  }
+  
+  .card-number {
+    transform: translate(-60px, -80px);
+    font-size: 120px;
+  }
+
+  .card-image {
+    display: none;
+  }
+
+  .card-tags span {
+    margin-bottom: 16px;
+  }
+}
