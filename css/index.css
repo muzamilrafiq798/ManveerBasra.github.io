@@ -3,7 +3,7 @@ body {
   overflow: hidden;
 }
 
-.circle {
+.index-circle {
   top: -450px;
   left: 380px;
   height: 1300px;
@@ -55,6 +55,7 @@ body {
 .view-work-container:hover img {
   transform: translateX(24px);
 }
+
 
 .view-work-container img {
   display: inline-block;
@@ -114,7 +115,7 @@ body {
 
 @media (max-width: 767px) {
 
-  .circle {
+  .index-circle {
     top: -50px;
     left: 80px;
     height: 500px;
