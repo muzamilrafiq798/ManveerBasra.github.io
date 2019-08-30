@@ -18,28 +18,42 @@ var $loop = setInterval(function(){
   $xp += (($mouseX - $xp)/12);
   $yp += (($mouseY - $yp)/12);
 
-  // index circle
-  $(".circle").css({
-    left: -($xp * 0.1) + 400 + 'px',
-    top: -($yp * 0.1) - 450 + 'px'
+  // index-page circle
+  $(".index-circle").css({
+    left: -($xp * 0.075) + 400 + 'px',
+    top: -($yp * 0.075) - 450 + 'px'
   });  
 
-   // index circle
+   // project-page circles
   $(".first-circle").css({
-    left: -($xp * 0.1) + 50 + 'px',
-    top: -($yp * 0.1) + 550 + 'px'
+    left: -($xp * 0.075) + 50 + 'px',
+    top: -($yp * 0.075) + 550 + 'px'
    });  
-
-  // index circle
   $(".sec-circle").css({
-    left: -($xp * 0.1) + 800 + 'px',
-    top: -($yp * 0.1) + 1200 + 'px'
+    left: -($xp * 0.075) + 800 + 'px',
+    top: -($yp * 0.075) + 1200 + 'px'
+  });  
+  $(".third-circle").css({
+    left: -($xp * 0.075) + 300 + 'px',
+    top: -($yp * 0.075) + 2400 + 'px'
   });  
 
-  // index circle
-  $(".third-circle").css({
-    left: -($xp * 0.1) + 300 + 'px',
-    top: -($yp * 0.1) + 2400 + 'px'
-  });  
+  // about-page elements
+  $(".first-circle-about").css({
+    left: -($xp * 0.075) + 180 + 'px',
+    top: -($yp * 0.075) - 50 + 'px'
+   });
+   $(".second-circle-about").css({
+    left: -($xp * 0.02) + 'px',
+    top: -($yp * 0.02) + 'px'
+   });
+   $(".main-name").css({
+    right: ($xp * 0.005) + 320 + 'px',
+    top: -($yp * 0.005) + 150 + 'px'
+   });
+   $(".portrait-frame").css({
+    right: ($xp * 0.015) + 300 + 'px',
+    top: -($yp * 0.015) + 185 + 'px'
+   });
 
 }, 30);

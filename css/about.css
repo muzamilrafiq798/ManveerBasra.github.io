@@ -75,7 +75,7 @@ body {
   width: 500px;
 }
 
-.first-circle {
+.first-circle-about {
   position: absolute;
   top: -50px;
   left: 150px;
@@ -134,7 +134,10 @@ body {
   letter-spacing: 3px;
 }
 
-.second-circle {
+.second-circle-about {
+  position: absolute;
+  left: 0;
+  top: 0;
   background-color: #ffffff;
   width: 865px;
   height: 865px;
