@@ -28,22 +28,24 @@ $(document).ready(function () {
   });
 });
 
+// Animating all elements
 var $loop = setInterval(function () {
-  // change 12 to alter damping higher is slower
-  $xp += (($mouseX - $xp) / 12);
-  $yp += (($mouseY - $yp) / 12);
-
+  // mouse pointer
   $xm += (($mouseX - $xm) / 4);
   $ym += (($mouseY - $ym) / 4);
+  $(".mouse-pointer").css({
+    left: $xm - 10 + 'px',
+    top: $ym - 10 + 'px'
+  });
+
+  // other elem x and y values
+  $xp += (($mouseX - $xp) / 12);
+  $yp += (($mouseY - $yp) / 12);
 
   // index-page circle
   $(".index-circle").css({
     left: -($xp * 0.075) + 400 + 'px',
     top: -($yp * 0.075) - 450 + 'px'
-  });
-  $(".mouse-pointer").css({
-    left: $xm - 10 + 'px',
-    top: $ym - 10 + 'px'
   });
 
   // project-page circles
