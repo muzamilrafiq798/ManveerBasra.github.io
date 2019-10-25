@@ -72,7 +72,7 @@ var $loop = setInterval(function () {
     top: -($yp * 0.01) + 150 + 'px'
   });
   $(".portrait-frame").css({
-    right: ($xp * 0.025) + 300 + 'px',
+    right: ($xp * 0.025) + 280 + 'px',
     top: -($yp * 0.025) + 185 + 'px'
   });
 
