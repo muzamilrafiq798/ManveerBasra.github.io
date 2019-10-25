@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Manveer - Minimax Games</title>
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/header-nav-footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/project-pages.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+  rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-header-container">
+    <div class="site-header-content">
+      <div class="header-text-container">
+        <a class="header-text" href="../index.html">MANVEER BASRA</a>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="../index.html">ABOUT</a></li>
+          <li><a class="nav-link" href="../projects.html">PROJECTS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-container">
+    <div class="site-content">
+      <main>
+        <div class="page-container">
+
+          <!-- One Line Header -->
+          <div class="one-line-header">
+            <h1>Minimax Games</h1>
+            <h2>2018</h2>
+          </div>
+
+          <!-- Secondary Header -->
+          <div class="secondary-header">
+              <a href="https://github.com/ManveerBasra/MinimaxTextGames" target="_blank">
+              <h2>See the source code on Github</h2></a>
+          </div>
+
+          <!-- Project Description -->
+          <div class="page-content">
+            <div class="summaries-container">
+              <div class="project-summary">
+                <p>This project was done as part of a school assignment aimed at
+                teaching students the basics of recursion. The games are text-based
+                two-player, sequential move, zero-sum, perfect-information games.
+                The recursive/iterative strategies work by checking every possible
+                move from the current state and determining whether each will result
+                in a win or loss for the current player if both players play
+                perfectly.<br><br>
+
+                The assignment only required a recursive and iterative minimax
+                function. However after seeing the inefficiency in
+                regards to time, I created two more functions to optimize the
+                strategies with some help from a Teaching Assistant.<br><br>
+                </p>
+                <div class="optimized-strategy-summary">
+                  <h3>Memoization</h3>
+                  <p>By storing states already seen, and their respective scores
+                  in a dictionary, I was able to  skip states already "seen" and
+                  save the program from redundant repetitiveness.<br><br></p>
+                  <h3>Myopia</h3>
+                  <p>In this strategy I limited the recursion depth to 4, in
+                  essence, giving the strategy "nearsightedness" (a.k.a. Myopia).
+                  Once depth 4 was reached, I used the rough outcome strategy
+                  to approximate the state's score. This strategy significantly
+                  sped up the program however it did sacrifice accuracy in order
+                  to achieve this.<br><br>
+                </div>
+                <p>Below is a demo of the program.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Demonstration Video -->
+          <div class="demo-video-minimax">
+            <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/1yMB0LOnr6s" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© Manveer Basra 2018</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>

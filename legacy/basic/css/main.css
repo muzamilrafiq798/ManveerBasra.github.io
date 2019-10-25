@@ -1,0 +1,121 @@
+/* General */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+div {
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Main Site */
+
+.site-container {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.site-content {
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+}
+
+/* -- Main Page-Content */
+
+.page-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  max-width: 800px;
+}
+
+.page-content p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.page-content h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.page-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.summaries-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.website-summary {
+  margin-top: 20px;
+}
+
+.social-media-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+.page-container a {
+  color: hsla(0, 0%, 0%, 0.9);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.page-container a:hover {
+  text-decoration: underline;
+}
+
+/* -- One-Line Header -- */
+
+.one-line-header {
+  background-color: #90caf9;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.one-line-header h1 {
+  color: White;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.one-line-header h2 {
+  color: White;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
