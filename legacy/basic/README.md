@@ -1,5 +1,5 @@
 # ManveerBasra.github.io
 
-Online Portfolio for Manveer Basra (In Development)
+Legacy Portfolio for Manveer Basra
 
-You can view preliminary site at https://manveerbasra.github.io/
+You can view legacy site at https://manveerbasra.github.io/legacy/basic/index.html
