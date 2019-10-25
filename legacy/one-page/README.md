@@ -2,7 +2,7 @@
 
 Legacy Portfolio for Manveer Basra
 
-You can view legacy site at https://manveerbasra.github.io/legacy/basic/index.html
+You can view legacy site at https://manveerbasra.github.io/legacy/one-page/index.html
 
 ### About This Project
 
