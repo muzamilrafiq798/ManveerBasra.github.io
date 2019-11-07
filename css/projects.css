@@ -52,7 +52,7 @@ body {
 
 .card-selector {
   position: absolute;
-  left: 240px;
+  margin: 0 auto;
   width: 1212px;
   height: 492px;
   z-index: 2;
@@ -64,7 +64,7 @@ body {
 
 .card-frame {
   position: absolute;
-  left: 240px;
+  margin: 0 auto;
   width: 1200px;
   height: 480px;
   color: transparent;
