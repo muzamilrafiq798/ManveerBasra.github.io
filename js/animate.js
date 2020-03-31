@@ -3,8 +3,8 @@ var $xp = 0, $yp = 0;
 var $xm = 0, $ym = 0;
 
 $(document).mousemove(function (e) {
-  $mouseX = e.pageX;
-  $mouseY = e.pageY;
+  $mouseX = e.clientX;
+  $mouseY = e.clientY;
 });
 
 // Pointer hover actions

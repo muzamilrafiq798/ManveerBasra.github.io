@@ -48,6 +48,12 @@ body {
   width: 614px;
   height: 614px;
   z-index: 1;
+
+  /* make image not selectable */
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 /* L-SIDE INTRO */
