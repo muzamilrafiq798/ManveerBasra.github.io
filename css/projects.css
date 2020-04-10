@@ -131,6 +131,10 @@ body {
   margin-top: 100px;
 }
 
+.view-source-container#prep-me-view-source {
+  margin-top: 70px;
+}
+
 .view-source-container img {
   display: inline-block;
   height: 22px;
@@ -165,6 +169,14 @@ body {
   transition: all 0.3s ease;
 }
 
+.card-image#prepme-image {
+  transform: translate(-25px, -75px);
+}
+
+.card-image#prepme-image img{
+  width: 400px;
+}
+
 /* TRANSITIONS */
 
 .card-container:hover {
@@ -193,6 +205,11 @@ body {
 .card-container:hover .card-image img {
   transform: translate(1.5px, 4px);
   width: 276px;
+}
+
+.card-container:hover .card-image#prepme-image img{
+  transform: translate(1.5px, 4px);
+  width: 394px;
 }
 
 /* Small Screens (Phones) */
