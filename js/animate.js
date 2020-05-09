@@ -9,7 +9,7 @@ $(document).mousemove(function (e) {
 
 // Pointer hover actions
 $(document).ready(function () {
-  $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a", function () {
+  $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
     $("#mouse-pointer").css({
       "background-color": "rgba(255, 152, 0, 0.25)",
       width: '60px',
@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
   });
 
-  $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a", function () {
+  $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
     $("#mouse-pointer").css({
       "background-color": "rgba(255, 152, 0, 1)",
       width: '20px',
@@ -74,6 +74,16 @@ var $loop = setInterval(function () {
   $(".portrait-frame").css({
     right: ($xp * 0.025) + 280 + 'px',
     top: -($yp * 0.025) + 185 + 'px'
+  });
+
+  //photography-page elements
+  $(".first-circle-ph").css({
+    right: ($xp * 0.075) + 50 + 'px',
+    top: -($yp * 0.075) + 550 + 'px'
+  });
+  $(".sec-circle-ph").css({
+    right: ($xp * 0.075) + 800 + 'px',
+    top: -($yp * 0.075) + 1200 + 'px'
   });
 
 }, 30);
