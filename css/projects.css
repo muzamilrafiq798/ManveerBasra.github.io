@@ -215,6 +215,10 @@ body {
 /* Small Screens (Phones) */
 
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .my-projects-header {
     font-size: 32px;
     letter-spacing: 3px;

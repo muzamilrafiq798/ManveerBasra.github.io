@@ -93,6 +93,10 @@
 /* Small Screens (Phones) */
 
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .photography-header {
     font-size: 32px;
     letter-spacing: 3px;
