@@ -89,3 +89,32 @@
 .white-overlay:hover .card-number {
   color: rgba(255, 255, 255, 1);
 }
+
+/* Small Screens (Phones) */
+
+@media (max-width: 767px) {
+  .photography-header {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .column {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .column a {
+    transform: translateY(0px);
+  }
+
+  .column a:hover {
+    width: 98%;
+  }
+  
+  
+  .white-overlay .card-number {
+    visibility: hidden;
+  }
+}

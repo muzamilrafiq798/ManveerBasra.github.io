@@ -182,6 +182,10 @@ body {
 
 @media (max-width: 767px) {
 
+  body {
+    overflow: scroll;
+  }
+
   .main-name {
     visibility: hidden;
   }

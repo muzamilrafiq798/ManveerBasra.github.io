@@ -269,4 +269,8 @@ body {
   .card-tags span {
     margin-bottom: 16px;
   }
+
+  .view-source-container {
+    margin-top: 20px;
+  }
 }
