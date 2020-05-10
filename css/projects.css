@@ -102,6 +102,10 @@ body {
   line-height: 30px;
 }
 
+.card-desc#no-image {
+  width: 1000px;
+}
+
 .card-number {
   position: absolute;
   top: 0;
@@ -258,6 +262,10 @@ body {
   }
   
   .card-desc {
+    width: 330px;
+  }
+
+  .card-desc#no-image {
     width: 330px;
   }
   
