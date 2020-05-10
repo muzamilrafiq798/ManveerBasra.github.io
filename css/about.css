@@ -56,6 +56,10 @@ body {
   user-select: none; /* Standard */
 }
 
+.image-circle img {
+  width: 614px;
+}
+
 /* L-SIDE INTRO */
 
 .intro-container {
@@ -172,4 +176,66 @@ body {
 
 .icon:hover {
   color: var(--main-orange-color);
+}
+
+/* Small Screens (Phones) */
+
+@media (max-width: 767px) {
+
+  .main-name {
+    visibility: hidden;
+  }
+
+  .portrait-frame {
+    visibility: hidden;
+  }
+
+  .intro-container {
+    position: static;
+    margin-left: var(--outer-margin);
+    margin-top: 50px;
+  }
+
+  .intro-main {
+    width: 90%;
+  }
+
+  .image-circle {
+    position: static;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+    display: block;
+  }
+
+  .image-circle img {
+    width: 200px;
+  }
+
+  .bottom-circle-container {
+    margin: 0 var(--outer-margin);
+    margin-top: 150px;
+    position: static;
+  }
+  
+  .connect-text {
+    position: static;
+    font-size: 40px;
+  }
+
+  .second-circle-about {
+    width: 600px;
+    height: 600px;
+    top: 120%;
+    left: -50%;
+  }
+
+  .sc-icons-container {
+    position: static;
+    padding-top: 25px;
+  }
+
 }

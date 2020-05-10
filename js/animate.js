@@ -9,23 +9,25 @@ $(document).mousemove(function (e) {
 
 // Pointer hover actions
 $(document).ready(function () {
-  $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
-    $("#mouse-pointer").css({
-      "background-color": "rgba(255, 152, 0, 0.25)",
-      width: '60px',
-      height: '60px',
-      transform: 'translateX(-20px) translateY(-20px)'
+  if (document.width > 768) { // No pointer on small screens
+    $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
+      $("#mouse-pointer").css({
+        "background-color": "rgba(255, 152, 0, 0.25)",
+        width: '60px',
+        height: '60px',
+        transform: 'translateX(-20px) translateY(-20px)'
+      });
     });
-  });
-
-  $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
-    $("#mouse-pointer").css({
-      "background-color": "rgba(255, 152, 0, 1)",
-      width: '20px',
-      height: '20px',
-      transform: 'translateX(0px) translateY(0px)'
+  
+    $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
+      $("#mouse-pointer").css({
+        "background-color": "rgba(255, 152, 0, 1)",
+        width: '20px',
+        height: '20px',
+        transform: 'translateX(0px) translateY(0px)'
+      });
     });
-  });
+  }
 });
 
 // Animating all elements
