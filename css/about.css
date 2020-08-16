@@ -2,6 +2,32 @@ body {
   overflow: hidden;
 }
 
+.hyperlink {
+  color: var(--main-orange-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.hyperlink::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-orange-color);
+  transition: all 0.3s ease;
+}
+
+.hyperlink:hover {
+  color: var(--main-orange-color);
+}
+
+.hyperlink:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
 /* RIGHT FRAME */
 
 .portrait-frame {

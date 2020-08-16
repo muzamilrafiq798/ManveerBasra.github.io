@@ -9,7 +9,7 @@ $(document).mousemove(function (e) {
 
 // Pointer hover actions
 $(document).ready(function () {
-  $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
+  $("body").on("mouseenter", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a, .hyperlink", function () {
     $("#mouse-pointer").css({
       "background-color": "rgba(255, 152, 0, 0.25)",
       width: '60px',
@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
   });
 
-  $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a", function () {
+  $("body").on("mouseleave", ".view-work-container, .view-resume-container, .card-container, .icon, .main-logo, .nav-bar a, .photos a, .hyperlink", function () {
     $("#mouse-pointer").css({
       "background-color": "rgba(255, 152, 0, 1)",
       width: '20px',
